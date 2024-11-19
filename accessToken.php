@@ -1,5 +1,5 @@
 <?php
-//YOU MPESA API KEYS
+//MY API KEYS
 $consumerKey = "zEfN0pkNJT3w3YG4BSAkVjAZGgpFEo3wZ8lIVgVgaeeGsHIr"; //Fill with your app Consumer Key
 $consumerSecret = "utE2CMuoYA9Jk0e0EqBAt2UQnSG3YbI863uWjeZsqX24wQtf8NUrLZXe3ZdhMrHf"; //Fill with your app Consumer Secret
 //ACCESS TOKEN URL
@@ -15,5 +15,4 @@ $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 $result = json_decode($result);
 echo $access_token = $result->access_token;
 curl_close($curl);
-
 
