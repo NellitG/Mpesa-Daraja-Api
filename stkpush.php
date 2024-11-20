@@ -10,7 +10,7 @@ $Timestamp = date('YmdHis');
 // ENCRIPT  DATA TO GET PASSWORD
 $Password = base64_encode($BusinessShortCode . $passkey . $Timestamp);
 $phone = '254798620045';//phone number to receive the stk push
-$money = '1';
+$money = '10';
 $PartyA = $phone;
 $PartyB = '25479862045';
 $AccountReference = 'NYAYO INC FOUNDATION';
