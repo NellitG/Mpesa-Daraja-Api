@@ -12,7 +12,7 @@ $RequestRefID = $FirstCode . '-' . $SecondCode . '-' . $ThirdCode . '-' . $Fourt
 $amount = 10;
 $headers = array(
   'Authorization:Bearer ' . $access_token,
-  'Content-Type: application/json',
+  'Content-Type: application/x-www-form-urlencoded',
 );
 $requestData = array(
   'primaryShortCode' => $primaryShortCode,

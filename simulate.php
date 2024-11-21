@@ -7,7 +7,7 @@ $phone     = "";
 $BillRefNumber    = '';
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $stimulateTransactionUrl);
-curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Authorization:Bearer ' . $access_token));
+curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/x-www-form-urlencoded', 'Authorization:Bearer ' . $access_token));
 $curl_post_data = array(
   'ShortCode' =>  $BusinessShortCode,
   'CommandID' => 'CustomerPayBillOnline',

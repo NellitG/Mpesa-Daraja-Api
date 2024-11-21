@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: application/json");
+header("Content-Type: application/x-www-form-urlencoded");
 $response = '{
 "ResultCode": 0,
 "ResultDesc": "Confirmation Received Successfully"

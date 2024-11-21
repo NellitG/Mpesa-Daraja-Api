@@ -19,7 +19,7 @@ $Occasion = 'Online Payment';
 /* Main B2C Request to the API */
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $b2c_url);
-curl_setopt($curl, CURLOPT_HTTPHEADER, ['Content-Type:application/json', 'Authorization:Bearer ' . $access_token]);
+curl_setopt($curl, CURLOPT_HTTPHEADER, ['Content-Type:application/x-www-form-urlencoded', 'Authorization:Bearer ' . $access_token]);
 $curl_post_data = array(
     'InitiatorName' => $InitiatorName,
     'SecurityCredential' => $SecurityCredential,

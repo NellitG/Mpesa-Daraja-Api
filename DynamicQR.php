@@ -18,7 +18,7 @@ curl_setopt_array(
   array(
     CURLOPT_URL => $DynamicQRUrl,
     CURLINFO_HEADER_OUT => true,
-    CURLOPT_HTTPHEADER =>  array('Content-Type: application/json', 'Authorization:Bearer ' . $access_token),
+    CURLOPT_HTTPHEADER =>  array('Content-Type: application/x-www-form-urlencoded', 'Authorization:Bearer ' . $access_token),
     CURLOPT_POST =>  true,
     CURLOPT_POSTFIELDS =>  json_encode($payload),
     CURLOPT_RETURNTRANSFER =>  true,

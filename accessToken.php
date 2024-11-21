@@ -5,7 +5,7 @@ $consumerSecret = "utE2CMuoYA9Jk0e0EqBAt2UQnSG3YbI863uWjeZsqX24wQtf8NUrLZXe3ZdhM
 
 //ACCESS TOKEN URL
 $access_token_url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
-$headers = ['Content-Type:application/json; charset=utf8'];
+$headers = ['Content-Type:application/x-www-form-urlencoded; charset=utf8'];
 $curl = curl_init($access_token_url);
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);

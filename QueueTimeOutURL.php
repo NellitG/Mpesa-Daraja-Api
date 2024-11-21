@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: application/json");
+header("Content-Type: application/x-www-form-urlencoded");
 $QueueTimeOutURLCallbackResponse = file_get_contents('php://input');
 $logFile = "QueueTimeOutURL.json";
 $log = fopen($logFile, "a");

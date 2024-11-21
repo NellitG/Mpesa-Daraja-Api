@@ -8,7 +8,7 @@ $validationUrl = 'https://1c95-105-161-14-223.ngrok-free.app/Daraja-Api/validati
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $registerurl);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-  'Content-Type:application/json',
+  'Content-Type:application/x-www-form-urlencoded',
   'Authorization:Bearer ' . $access_token
 ));
 $data = array(

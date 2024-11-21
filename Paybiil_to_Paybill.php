@@ -33,7 +33,7 @@ curl_setopt($ch, CURLOPT_URL, $apiUrl);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $requestJson);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-    'Content-Type: application/json',
+    'Content-Type: application/x-www-form-urlencoded',
     'Authorization:Bearer ' . $access_token // Replace with your actual access token
 ));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
