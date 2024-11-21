@@ -17,7 +17,7 @@ $request_data = array(
 );
 $data_string = json_encode($request_data);
 $headers = array(
-    'Content-Type: application/json',
+    'Content-Type: application/x-www-form-urlencoded',
     'Authorization:Bearer ' . $access_token
 );
 $curl = curl_init();
